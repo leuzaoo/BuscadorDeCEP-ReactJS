@@ -1,0 +1,58 @@
+.container {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    90deg,
+    rgb(51, 138, 209),
+    rgb(26, 175, 201)
+  );
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 56px;
+  animation: titleAnimation 1s;
+}
+
+@keyframes titleAnimation {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.inputCEP {
+  height: 35px;
+  border: none;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.inputCEP::placeholder {
+  color: black;
+  padding-left: 10px;
+  opacity: 0.8;
+}
+
+.searchButton {
+  height: 35px;
+  width: 35px;
+  border: none;
+  background-color: #999;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background-color: #999999;
+}
+
+.localItems {
+  display: flex;
+  flex-direction: column;
+}
