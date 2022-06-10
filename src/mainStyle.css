@@ -27,29 +27,52 @@
   }
 }
 
+.inputContainer {
+  padding: 15px;
+  margin: 15px 0;
+  display: flex;
+}
+
+.inputContainer input {
+  border: 0;
+  outline: none;
+  font-size: 16px;
+  text-align: left;
+}
+
 .inputCEP {
-  height: 35px;
   border: none;
+  width: auto;
+  padding-left: 10px;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 0 5px;
 }
 
 .inputCEP::placeholder {
-  color: black;
   padding-left: 10px;
   opacity: 0.8;
 }
 
 .searchButton {
-  height: 35px;
-  width: 35px;
+  width: 50px;
+  height: 50px;
   border: none;
-  background-color: #999;
+  background-color: transparent;
+  transition: all 0.5s ease;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .searchButton:hover {
-  background-color: #999999;
+  background-color: #eee;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .localItems {
