@@ -12,6 +12,11 @@
   );
 }
 
+h1{
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .title {
   text-transform: uppercase;
   font-size: 56px;
@@ -31,6 +36,7 @@
   padding: 15px;
   margin: 15px 0;
   display: flex;
+  animation: titleAnimation 1s;
 }
 
 .inputContainer input {
@@ -69,13 +75,31 @@
 }
 
 .searchButton:hover {
-  background-color: #eee;
+  background-color: #fff;
   border-radius: 25px;
   transition: all 0.3s ease;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 20px;
+}
+
+.main {
+  animation: titleAnimation 1s;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.main h2{
+    margin-bottom: 20px;
+}
+
+span {
+  margin: 5px 0;
 }
 
 .localItems {
-  display: flex;
-  flex-direction: column;
-}
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  
