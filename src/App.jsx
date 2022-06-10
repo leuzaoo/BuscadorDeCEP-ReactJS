@@ -1,15 +1,31 @@
 // Library
 import { FiSearch } from "react-icons/fi";
 import { useState } from "react";
+import api from "./services/api";
 
 // Styles
 import "./mainStyle.css";
 
 function App() {
   const [input, setInput] = useState("");
+  const [cep, setCep] = useState({});
 
-  function handleSearch() {
-    alert(input);
+  async function handleSearch() {
+    // 01001000/json/
+
+    if (input === "") {
+      alert("Insira um CEP");
+      return;
+    }
+
+    try {
+      const response = await api.get(`${input}/json`);
+      setCep(response.data);
+      setInput("");
+    } catch {
+      alert("Ops, ocorreu um erro ao buscar o CEP.");
+      setInput("");
+    }
   }
 
   return (
@@ -30,15 +46,16 @@ function App() {
         </button>
       </div>
 
-      <main className="main">
-        <h2 className="cepNumber">CEP: 13205-730</h2>
-        <div className="localItems">
-          <span>Rua: Nome gerado aleatoriamente.</span>
-          <span>Complemento: Complemento gerado aleatoriamente.</span>
-          <span>Bairro: Bairro aleatório.</span>
-          <span>Cidade: Cidade - Estado</span>
-        </div>
-      </main>
+      {Object.keys(cep).length > 0 && (
+        <main className="main">
+          <h2 className="cepNumber">CEP: {cep.cep}</h2>
+          <div className="localItems">
+            <span>Endereço: {cep.logradouro}.</span>
+            <span>Bairro: {cep.bairro}.</span>
+            <span>Cidade: {cep.localidade}.</span>
+          </div>
+        </main>
+      )}
     </div>
   );
 }
