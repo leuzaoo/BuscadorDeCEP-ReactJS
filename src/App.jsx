@@ -10,8 +10,8 @@ function App() {
   const [input, setInput] = useState("");
   const [cep, setCep] = useState({});
 
-  async function handleSearch() {
-    // 01001000/json/
+  async function handleSearch(e) {
+    e.preventDefault();
 
     if (input === "") {
       alert("Insira um CEP");
@@ -29,7 +29,7 @@ function App() {
   }
 
   return (
-    <div className="container">
+    <form onSubmit={handleSearch} className="container">
       <h1 className="title">Buscador de CEP</h1>
 
       <div className="inputContainer">
@@ -56,7 +56,7 @@ function App() {
           </div>
         </main>
       )}
-    </div>
+    </form>
   );
 }
 
