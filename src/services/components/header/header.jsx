@@ -5,7 +5,7 @@ function Header() {
     <>
       <div className="nav">
         <div className="logotipo">
-          <p>LEO</p>
+          <p>Logo</p>
         </div>
         <div className="nav-itens">
           <ul>
