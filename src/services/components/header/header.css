@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+.logotipo p {
+  margin-left: 50%;
+}
+
+.nav-itens ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-itens {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-itens a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 40px;
+}
