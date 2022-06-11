@@ -10,6 +10,9 @@ function Header() {
         <div className="nav-itens">
           <ul>
             <li>
+              <a href="/">Buscador</a>
+            </li>
+            <li>
               <a href="#">Sobre</a>
             </li>
             <li>

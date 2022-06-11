@@ -27,12 +27,10 @@
   text-transform: uppercase;
   margin: 0 40px;
   transition: all 0.5s ease;
-  padding: 20px;
 }
 
 .nav-itens a:hover {
   color: rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
   font-size: 15px;
-  padding: 20px;
 }
