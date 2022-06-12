@@ -1,15 +1,35 @@
-.card-box{
-    width: 500px;
-    height: 400px;
-    background-color: #fff;
+.card-box {
+  width: 50%;
+  height: 150px;
+  background-color: #fff;
+  animation: titleAnimation 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
 }
 
-.title-name{
-    margin-top: 15px;
-    text-transform: uppercase;
+.title-name {
+  text-transform: uppercase;
 }
 
-.card-box p{
-    text-align: left;
-    margin-left: 50px;
+.country {
+  color: orange;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.card-box p {
+  text-align: left;
+  margin-left: 70px;
+}
+
+@keyframes titleAnimation {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
 }

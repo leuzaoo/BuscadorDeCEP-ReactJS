@@ -13,7 +13,7 @@ function Funcionality() {
         <div className="card-box">
           <h2 className="title-name card">Para um bom funcionamento:</h2>
           <p>Insira somente números;</p>
-          <p>Apenas endereços do Brasil;</p>
+          <p>Apenas endereços do <span className="country">Brasil</span>;</p>
           <p>Não coloque espaço entre os números.</p>
         </div>
       </div>
