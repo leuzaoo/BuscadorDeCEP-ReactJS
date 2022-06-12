@@ -1,0 +1,15 @@
+.card-box{
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+}
+
+.title-name{
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.card-box p{
+    text-align: left;
+    margin-left: 50px;
+}
