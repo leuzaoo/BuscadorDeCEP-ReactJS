@@ -1,4 +1,5 @@
 import "./header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -10,13 +11,13 @@ function Header() {
         <div className="nav-itens">
           <ul>
             <li>
-              <a href="/">Buscador</a>
+              <Link to="/">Buscador</Link>
             </li>
             <li>
-              <a href="#">Sobre</a>
+              <Link to="/about">Sobre</Link>
             </li>
             <li>
-              <a href="#">Como funciona</a>
+              <Link to="/funcionality">Como funciona</Link>
             </li>
           </ul>
         </div>
