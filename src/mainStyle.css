@@ -102,3 +102,11 @@ span {
   flex-direction: column;
   margin: 10px 0;
 }
+
+@media screen and (max-width: 570px) {
+
+.container {
+  height: 100vh;
+}
+
+}
