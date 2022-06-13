@@ -34,3 +34,10 @@
     transform: rotateX(0deg);
   }
 }
+
+@media screen and (max-width: 570px) {
+  .card-box {
+    min-width: 450px;
+    margin-right: 80px;
+  }
+}
