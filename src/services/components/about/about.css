@@ -18,3 +18,11 @@
     transform: rotateX(0deg);
   }
 }
+
+.about p {
+  font-weight: bold;
+}
+
+.dev-name {
+  margin-top: 30px;
+}

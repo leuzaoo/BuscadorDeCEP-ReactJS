@@ -12,8 +12,8 @@ function About() {
       <div className="container">
         <div className="about">
           <h2>Desenvolvido por:</h2>
-          <p>Leonardo Costa de Oliveira;</p>
-          <p>Desenvolvedor Frontend.</p>
+          <p className="dev-name">Leonardo Costa de Oliveira;</p>
+          <p className="function-name">Desenvolvedor Frontend.</p>
         </div>
       </div>
     </>
