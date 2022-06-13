@@ -13,6 +13,8 @@
 .title-name {
   text-transform: uppercase;
   margin-bottom: 15px;
+  width: 50%;
+  margin-left: 25%;
 }
 
 .country {
@@ -38,6 +40,5 @@
 @media screen and (max-width: 570px) {
   .card-box {
     min-width: 450px;
-
   }
 }
